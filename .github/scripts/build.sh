@@ -41,8 +41,6 @@ echo "Building Angular app for $ENV..."
 ./node_modules/.bin/ng build
 check_errcode "Failed to build angular! stopping script!"
 
-fi
-
 echo "Copying angular dist into dist directory..."
 mkdir ../dist/src/dist
 cp -Rf dist ../dist/src
