@@ -27,12 +27,12 @@ echo "Removing dist directory..."
 rm -rf dist
 
 echo "Compiling typescript..."
-./node_modules/.bin/tsc -p ./tsconfig.prod.json
+./node_modules/.bin/tsc -p ./tsconfig.app.json
 check_errcode "Failed to compile typescript! aborting script!"
 
-echo "Copying configuration files..."
-cp -Rf src/config dist/src/config
-check_errcode "Failed to copy configuration files! aborting script!"
+# echo "Copying configuration files..."
+# cp -Rf src/config dist/src/config
+# check_errcode "Failed to copy configuration files! aborting script!"
 
 echo "Starting to configure Angular app..."
 pushd angular-src
