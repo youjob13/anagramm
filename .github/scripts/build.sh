@@ -14,7 +14,7 @@ echo "Checking for missing dependencies before build..."
 # Check if node_modules exists, if not throw an error
 if [ ! -d "./node_modules" ] || [ ! -d "./angular-src/node_modules" ]; then
     echo "node_modules are missing! running install script..."
-    npm run install:all
+    npm run ci
     echo "Installed all missing dependencies! starting installation..."
 else
     echo "All dependencies are installed! Ready to run build!"
