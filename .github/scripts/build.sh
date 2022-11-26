@@ -41,13 +41,6 @@ echo "Building Angular app for $ENV..."
 ./node_modules/.bin/ng build
 check_errcode "Failed to build angular! stopping script!"
 
-# TODO: Remove this 'if' statment until the 'fi' if you don't want SSR at all
-if [ $ENV == "production" ]; then
-    echo "Building Angular app for SSR..."
-    ./node_modules/.bin/ng run angular-src:server:production
-    check_errcode "Failed to build Angular app for SSR! aborting script!"
-else
-    echo "Skipping build for SSR as environment is NOT production"
 fi
 
 echo "Copying angular dist into dist directory..."
