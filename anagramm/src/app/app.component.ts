@@ -9,6 +9,6 @@ export class AppComponent implements OnInit {
   public title = 'Anagramm';
 
   ngOnInit(): void {
-    setTimeout(() => (this.title = 'Anagramm title has been changed'), 3000);
+    setTimeout(() => (this.title = 'Anagramm title has been changed!'), 3000);
   }
 }
