@@ -35,7 +35,7 @@ check_errcode "Failed to compile typescript! aborting script!"
 # check_errcode "Failed to copy configuration files! aborting script!"
 
 echo "Starting to configure Angular app..."
-pushd angular-src
+# pushd angular-src
 
 echo "Building Angular app for $ENV..."
 ./node_modules/.bin/ng build
@@ -50,6 +50,6 @@ check_errcode "Failed to build angular! stopping script!"
 # rm -rf dist
 
 # Go back to the current directory
-popd
+# popd
 
 echo "-- Finished building Angular & NodeJS, check dist directory --"
