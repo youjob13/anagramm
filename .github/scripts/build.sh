@@ -22,9 +22,7 @@ fi
 
 # This script compiles typescript and Angular 7 application and puts them into a single NodeJS project
 ENV=${NODE_ENV:-production}
-echo -e "\n-- Started build script for Angular & NodeJS (environment $ENV) --"
-echo "Removing dist directory..."
-rm -rf dist
+echo -e "\n-- Started build script for Angular (environment $ENV) --"
 
 echo "Compiling typescript..."
 ./node_modules/.bin/tsc -p ./tsconfig.app.json
