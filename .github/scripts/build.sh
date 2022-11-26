@@ -41,13 +41,13 @@ echo "Building Angular app for $ENV..."
 ./node_modules/.bin/ng build
 check_errcode "Failed to build angular! stopping script!"
 
-echo "Copying angular dist into dist directory..."
-mkdir ../dist/src/dist
-cp -Rf dist ../dist/src
-check_errcode "Failed to copy anuglar dist files! aborting script!"
+# echo "Copying angular dist into dist directory..."
+# mkdir ../dist/src/dist
+# cp -Rf dist ../dist/src
+# check_errcode "Failed to copy anuglar dist files! aborting script!"
 
-echo "Removing angular-src dist directory..."
-rm -rf dist
+# echo "Removing angular-src dist directory..."
+# rm -rf dist
 
 # Go back to the current directory
 popd
