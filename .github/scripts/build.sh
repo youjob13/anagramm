@@ -51,4 +51,5 @@ check_errcode "Failed to build angular! stopping script!"
 # Go back to the current directory
 # popd
 pwd
+ls
 echo "-- Finished building Angular & NodeJS, check dist directory --"
